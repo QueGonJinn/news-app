@@ -1,0 +1,13 @@
+.navbar-container {
+	display: flex;
+	justify-content: end;
+	margin: 0 auto;
+	gap: 40px;
+	max-width: 1420px;
+	position: relative;
+	& a {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-right: 20px;
+	}
+}
