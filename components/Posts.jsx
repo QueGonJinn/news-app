@@ -17,7 +17,9 @@ const Posts = ({ post }) => {
 				<div className="card-wrapper">
 					<Link href={`/post/${post.slug.current}`}>
 						<div className="post-card">
-							<img src={urlFor(post.mainImage)} alt={post.slug} className="post-image" />
+							<div className="post-card-image">
+								<img src={urlFor(post.mainImage)} alt={post.slug} className="post-image" />
+							</div>
 							<h2 className="post-name">{post.title}</h2>
 							<div className="post-descr">
 								<PortableText value={post.body[0]} />

@@ -4,10 +4,7 @@ import NavBar from './Navbar';
 import Footer from './Footer';
 import Sider from './Sider';
 
-import { categories } from '@/pages';
-
 const Layout = ({ children }) => {
-	console.log(categories);
 	return (
 		<div className="layout">
 			<Head>
@@ -16,9 +13,6 @@ const Layout = ({ children }) => {
 			<header className="header">
 				<NavBar />
 			</header>
-			<aside className="sidebar">
-				<Sider />
-			</aside>
 			<main className="main">{children}</main>
 			<footer className="footer">
 				<Footer />
