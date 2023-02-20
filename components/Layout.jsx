@@ -3,9 +3,11 @@ import Head from 'next/head';
 import NavBar from './Navbar';
 import Footer from './Footer';
 import Sider from './Sider';
-import { client } from '@/lib/client';
 
-const Layout = ({ children, category }) => {
+import { categories } from '@/pages';
+
+const Layout = ({ children }) => {
+	console.log(categories);
 	return (
 		<div className="layout">
 			<Head>

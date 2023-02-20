@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const NavBar = ({}) => {
+const NavBar = ({ props }) => {
 	return (
 		<div className="navbar-container">
 			<Link href="#">Технологии</Link>

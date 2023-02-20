@@ -18,11 +18,12 @@ const Home = ({ posts, bannerData }) => {
 export const getServerSideProps = async () => {
 	const query = '*[_type == "post"]';
 	const posts = await client.fetch(query);
+	const navQuery = '*[_type == "category"]';
+	const category = await client.fetch(navQuery);
 	const bannerQuery = '*[_type == "banner"]';
 	const bannerData = await client.fetch(bannerQuery);
-
 	return {
-		props: { posts, bannerData },
+		props: { posts, bannerData, category },
 	};
 };
 
