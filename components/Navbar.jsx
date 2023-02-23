@@ -7,11 +7,7 @@ const NavBar = ({ props }) => {
 			<div className="navbar-logo">
 				<Link href={'/'}>NewsApp</Link>
 			</div>
-			<div className="navbar-menu">
-				<Link href="#">Технологии</Link>
-				<Link href="#">Наука</Link>
-				<Link href="#">CGI</Link>
-			</div>
+			<div className="navbar-menu"></div>
 		</div>
 	);
 };
