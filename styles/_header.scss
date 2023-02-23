@@ -1,13 +1,29 @@
 .navbar-container {
 	display: flex;
-	justify-content: end;
+	justify-content: space-between;
+	align-items: center;
 	margin: 0 auto;
 	gap: 40px;
-	max-width: 1420px;
+	padding: 0 40px;
+	max-width: 1400px;
 	position: relative;
 	& a {
 		font-size: 1.5rem;
 		font-weight: 600;
 		margin-right: 20px;
+	}
+}
+.navbar-logo a {
+	font-size: 32px;
+}
+
+.navbar-menu {
+	display: flex;
+	gap: 40px;
+}
+
+@media screen and (max-width: 800px) {
+	.navbar-menu {
+		display: none;
 	}
 }

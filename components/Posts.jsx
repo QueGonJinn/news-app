@@ -21,9 +21,7 @@ const Posts = ({ post }) => {
 								<img src={urlFor(post.mainImage)} alt={post.slug} className="post-image" />
 							</div>
 							<h2 className="post-name">{post.title}</h2>
-							<div className="post-descr">
-								<PortableText value={post.body[0]} />
-							</div>
+							<div className="post-descr">{post.lid}</div>
 						</div>
 					</Link>
 				</div>
